@@ -7,7 +7,7 @@ kotlin {
     sourceSets {
         getByName("commonMain").dependencies {
             implementation(kotlin("stdlib"))
-            implementation(project(":mpp-lib-0"))
+            api(project(":mpp-lib-0"))
         }
 
         getByName("jvmMain").dependencies {
