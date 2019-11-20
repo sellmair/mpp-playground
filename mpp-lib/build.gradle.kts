@@ -10,6 +10,10 @@ android {
         targetSdkVersion(28)
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    sourceSets {
+        getByName("androidTest").java.srcDir(file("src/androidAndroidTest/kotlin"))
+    }
 }
 
 kotlin {
