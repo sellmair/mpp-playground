@@ -1,13 +1,13 @@
-import kotlin.test.Test
+import org.junit.Test
 
-/**
- * Expected to fail!
- */
-class AndroidAndroidTest {
+class TestJava {
+
     @Test
     fun fail() {
         MainApiKotlin.sayHi()
         MainApiJava.sayHi()
+        AndroidMainApiKotlin.sayHi()
         CommonApi.throwException()
     }
+
 }
