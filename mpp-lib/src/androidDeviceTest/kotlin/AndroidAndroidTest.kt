@@ -6,6 +6,7 @@ import kotlin.test.Test
 class AndroidAndroidTest {
     @Test
     fun fail() {
+        AndroidCommonApi.sayHi()
         CommonApi.throwException()
     }
 }

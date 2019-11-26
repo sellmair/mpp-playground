@@ -40,7 +40,7 @@ android {
 
 kotlin {
     android()
-    macosX64("macos")
+//    macosX64("macos")
 
     sourceSets {
         getByName("commonMain").dependencies {
@@ -56,9 +56,13 @@ kotlin {
             implementation(kotlin("stdlib-jdk8"))
         }
 
-        getByName("androidAndroidTest").dependencies {
+        getByName("androidDeviceTest").dependencies {
             implementation(kotlin("test-junit"))
             implementation("com.android.support.test:runner:1.0.2")
+        }
+
+        getByName("androidLocalTest").dependencies {
+            implementation(kotlin("test-junit"))
         }
     }
 }
