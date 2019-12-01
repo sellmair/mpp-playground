@@ -1,4 +1,8 @@
 buildscript {
+    allprojects {
+        extra["kotlin_version"] = "1.3.70-SELLMAIR"
+    }
+
     repositories {
         maven { setUrl("https://dl.bintray.com/kotlin/kotlin-eap") }
         maven { setUrl("https://dl.bintray.com/kotlin/kotlin-dev") }
@@ -9,7 +13,7 @@ buildscript {
     }
 
     dependencies {
-        classpath(kotlin("gradle-plugin:1.3.70-SELLMAIR"))
+        classpath(kotlin("gradle-plugin:${rootProject.extra["kotlin_version"]}"))
         classpath("com.android.tools.build:gradle:3.5.2")
 
     }
