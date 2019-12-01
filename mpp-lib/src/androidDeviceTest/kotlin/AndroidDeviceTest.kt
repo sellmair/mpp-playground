@@ -3,7 +3,7 @@ import kotlin.test.Test
 /**
  * Expected to fail!
  */
-class AndroidAndroidTest {
+class AndroidDeviceTest {
     @Test
     fun fail() {
         AndroidCommonApi.sayHi()

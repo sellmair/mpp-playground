@@ -11,6 +11,13 @@ android {
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions("version")
+
+    productFlavors {
+        create("free")
+        create("paid")
+    }
+
     /*
     Situation:
     There are currently two tests implemented
